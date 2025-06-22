@@ -12,4 +12,15 @@ This beginner-friendly project demonstrates how to use **Azure Data Factory (ADF
 You have a CSV file with body measurements like height and weight. The goal is to load this data into a properly structured SQL table using Azure Data Factory's **Copy Data** pipeline.
 
 ## 📁 Folder Structure
+adf-csv-to-azure-sql/
+├── sample-data/
+│ └── body_measurements.csv
 
+## 🛠 SQL Table DDL
+
+```sql
+CREATE TABLE BodyMeasurements (
+    [Index] INT PRIMARY KEY,
+    Height_Inches FLOAT,
+    Weight_Pounds FLOAT
+);
